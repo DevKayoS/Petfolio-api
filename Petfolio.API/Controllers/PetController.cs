@@ -35,5 +35,13 @@ namespace Petfolio.API.Controllers
             
             return NoContent();
         }
+
+        [HttpGet]
+        [ProducesResponseType(typeof(List<ResponseAllPetJson>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        public IActionResult GetALl()
+        {
+            return Ok();
+        }
     }
 }
